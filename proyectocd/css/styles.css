@@ -1,0 +1,114 @@
+html {
+    font-size: 62.5%;
+}
+
+header {
+    height: 50%;
+    background-color: #2C56F0;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.navegador {
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+
+}
+
+.playlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.discosprinci {
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes-footer {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+
+}
+
+.redes {
+    width: 5%;
+}
+
+.img{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* por id */
+#banner {
+    color: green;
+}
+
+/* una clase */
+.rosaa {
+    color: pink;
+    font-family: "arial", sans-serif;
+    font-size: 30px;
+    font-weight: 10;
+}
+
+
+
+
+
+
+
+/* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <section id="banner">
+    <h1>the music</h1>
+    </section>
+    <section>
+            <div> 
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2H7Ptwzuy83loDyZzHiPw8?utm_source=generator" width="15%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+    </section>
+    <div>
+        <p class="rosaa"> rositaa</p>
+    </div>
+    <section>
+        <article>
+            <h2>entradas</h2>
+            <p>rio de janeiro</p>
+            <p>miami</p>
+        </article>
+        <div>
+            <h2>kevin</h2>
+            <p>karl</p>
+            <p class="kevin">el apellido <span>kevin</span>es hernandez</p>
+        </div>
+    </section>
+</body>
+</html>*/

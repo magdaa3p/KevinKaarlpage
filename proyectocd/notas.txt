@@ -1,0 +1,87 @@
+07/09
+flexbox
+display: indica que sus hijos son flexibles
+flex direction
+
+.padre{
+    display: flex;   flex: //acomoda en fila 
+    flex-direction: column; //en fila, row en el default
+
+
+}
+
+.padre{
+    display: flex;   flex: //acomoda en fila 
+    flex-direction: row-reverse // en fila al reves 
+    flex-direction: column-reverse
+
+}
+
+.padre{
+    display: flex; 
+    flex-wrap: wrap;   // los elementos que no entren ponelos en la otra fila
+    flex-wrap: nowrap  // no se acomoda, se amontona para que entren
+    flex-wrap: wrap-reverse  // para que te las acomode en otro lado pero al reves
+    
+
+}
+
+.padre{
+flex-flow: row nowrap;
+
+}
+
+justify-content  //nos ayuda a alinear los elementos en el eje principal
+
+.padre{
+flex-flow: row;
+justify-content: flex-start  // el default
+justify-content: center  // en el centro
+justify-content: flex-end  // al final del contenedor
+justify-content: space-beteewen  // pone espacio entre los elementos
+justify-content: space-around;  // los aleja mas
+justify-content: space-evenly  // la que menos spacea 
+}
+
+.padre{
+    align-items: flex-start  // alinea en los ejes principal
+    align-items: flex end  // lo mismo pero en en otro eje de justify
+    align-items: stretch  // que ocupen todo el ancho o el largo
+    align-items: column  // lo mismo pero en ancho del contenedor
+    align-items: baseline // distintos tamamos en la misma linea default
+
+}
+
+.padre {
+    align-content: center;  // se alinean todos al centro 
+
+}
+
+PROPIEDADES PARA LOS HIJOS  
+
+    .hijo{
+        order : 1;  // haces que los elementos tengan el orden que queramos
+
+
+    }
+
+    .hijo2{
+        order: 2;
+    }
+
+     .hijo2{
+        flex-grow: agrandar un elemento en especial
+    }
+
+    .hiijo{
+        flex-shrink: 2;  // configura la posibilidad de encorgerse si son mas anchos que el navegador 
+
+    }
+
+    
+
+
+
+
+
+
