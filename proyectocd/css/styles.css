@@ -1,34 +1,75 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+
 html {
     font-size: 62.5%;
+    background-color: #356445;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif; 
 }
 
-header {
-    height: 50%;
-    background-color: #2C56F0;
-
+body{
+    background-color: #218D59;
 }
 
-h1,
-h2,
+ .navegador {
+    background-color: #076600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    
+} 
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    margin: 10px;
+}
+
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    text-align: center;
+    color:black;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+h2{
+    font-size: 3rem;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    text-shadow: 1px 1px 1px #356445;
+}
+
+
 h3,
 h4 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-}
-
-.navegador {
-
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
-
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    font-size: 2.5rem;
+        color: black;
+        text-shadow: #356445;
+    
 }
 
 .playlist {
@@ -59,56 +100,146 @@ p {
     justify-content: space-around;
 }
 
-/* por id */
-#banner {
-    color: green;
+.inicio{
+    display: flex;
+    justify-content: center;
 }
 
-/* una clase */
-.rosaa {
-    color: pink;
-    font-family: "arial", sans-serif;
-    font-size: 30px;
-    font-weight: 10;
+.photosgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
+@media screen and (max-width: 1236px) {
+    .photosgrid {
+        grid-template-columns: 1fr;
+    }
+}
 
+.imgphotos{
+    height: 30vh;
+    width: auto;
+}
 
+.fijo{
+    display:inline-block;
+    margin: 1rem; 
+}
 
+/* //////////////////////////contacto////////////////////////// */
 
+.contacto {
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+form {
+    margin-top: 20px;
+}
 
-/* <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <section id="banner">
-    <h1>the music</h1>
-    </section>
-    <section>
-            <div> 
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2H7Ptwzuy83loDyZzHiPw8?utm_source=generator" width="15%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-    </section>
-    <div>
-        <p class="rosaa"> rositaa</p>
-    </div>
-    <section>
-        <article>
-            <h2>entradas</h2>
-            <p>rio de janeiro</p>
-            <p>miami</p>
-        </article>
-        <div>
-            <h2>kevin</h2>
-            <p>karl</p>
-            <p class="kevin">el apellido <span>kevin</span>es hernandez</p>
-        </div>
-    </section>
-</body>
-</html>*/
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* //////////////////////////gallery shop////////////////////////// */
+
+.grid-container-galleryshop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);  
+    gap: 20px; 
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container-galleryshop {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* //////////////////////////tour////////////////////////// */
+
+.tour-lista {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #356445;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tour-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tour-item .lugar {
+    flex-basis: 40%;
+}
+
+.tour-item .dia {
+    flex-basis: 30%;
+}
+
+.tour-item .buy-btn {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.buy-btn a {
+    display: block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buy-btn a:hover {
+    background-color: #0056b3;
+}
+
+div{
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #356445;
+}
