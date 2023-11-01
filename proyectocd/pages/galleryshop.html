@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/1677702776871088128/skm51dbK_400x400.jpg">
     <title>Gallery shop</title>
@@ -11,59 +12,79 @@
 
 <body>
     <header>
-        <nav class="navegador">
-            <ul>
-                <li><a href="../index.html">Kevin Kaarl</a></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./photos.html">Photos</a></li>
-                <li><a href="./discography.html">Discography</a></li>
-                <li><a href="./tour.html">Tour</a></li>
-                <li><a href="#">gallery shop</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light navegador">
+            <a class="navbar-brand" href="../index.html"><img class="logonav" src="https://kevinkaarl.mx/cdn/shop/files/Untitled_design_2.svg?v=1685393427&width=180" alt="logo de kevin kaarl"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto body">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./photos.html">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./discography.html">Discography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tour.html">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">gallery shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <h1>GALLERY SHOP</h1>
     <div class="grid-container-galleryshop">
         <div class="producto">
-            <img src="https://kevinkaarl.com/cdn/shop/files/11_faa78343-04a8-42f6-923a-316f51456e42.png?v=1683161373&width=360" alt="Remera 1">
+            <img src="https://kevinkaarl.com/cdn/shop/files/11_faa78343-04a8-42f6-923a-316f51456e42.png?v=1683161373&width=360" alt="Remera Carrito tee">
             <h2>Carrito Tee</h2>
             <p>$30.00 USD</p>
             <button>Agregar al carrito</button>
         </div>
         <div class="producto">
-            <img src="https://kevinkaarl.com/cdn/shop/files/16.png?v=1687216006&width=360" alt="Remera 2">
+            <img src="https://kevinkaarl.com/cdn/shop/files/16.png?v=1687216006&width=360" alt="Campera Paris Texas Varsity Jacket">
             <h2>Paris Texas Varsity Jacket</h2>
             <p>$140.00 USD</p>
             <button>Agregar al carrito</button>
         </div>
         <div class="producto">
-            <img src="https://kevinkaarl.com/cdn/shop/files/12_e4fa3a42-7b3a-4302-9a8b-2c9fc6292283.png?v=1683161355&width=360" alt="Remera 3">
+            <img src="https://kevinkaarl.com/cdn/shop/files/12_e4fa3a42-7b3a-4302-9a8b-2c9fc6292283.png?v=1683161355&width=360" alt="Remera te quiero tanto">
             <h2>Te Quiero Tanto Shirt - Tan</h2>
             <p>$40.00 USD</p>
             <button>Agregar al carrito</button>
         </div>
         <div class="producto">
-            <img src="https://kevinkaarl.com/cdn/shop/files/11_73096486-ef6e-480f-a436-ae7b6aa4a5f5.png?v=1683159576&width=360" alt="Remera 4">
+            <img src="https://kevinkaarl.com/cdn/shop/files/11_73096486-ef6e-480f-a436-ae7b6aa4a5f5.png?v=1683159576&width=360" alt="Remera te quiero tanto tee">
             <h2>Te Quiero Tanto Tee - Red</h2>
             <p>$40.00 USD</p>
             <button>Agregar al carrito</button>
         </div>
         <div class="producto">
-            <img src="https://kevinkaarl.com/cdn/shop/files/12.png?v=1682560946&width=360" alt="Remera 5">
+            <img src="https://kevinkaarl.com/cdn/shop/files/12.png?v=1682560946&width=360" alt="buso tour Crewneck">
             <h2>Tour Crewneck</h2>
             <p>$60.00 USD</p>
             <button>Agregar al carrito</button>
         </div>
         <div class="producto">
-            <img src="https://kevinkaarl.com/cdn/shop/files/WebsiteMocks-KevinKaarl.png?v=1683156777&width=360" alt="Remera 6">
+            <img src="https://kevinkaarl.com/cdn/shop/files/WebsiteMocks-KevinKaarl.png?v=1683156777&width=360" alt="gorra Carrito hat">
             <h2>Carrito Hat</h2>
             <p>$25.00 USD</p>
             <button>Agregar al carrito</button>
         </div>
     </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <footer>
         <div>
             <p>© 2023 KEVIN KAARL and Warner Records. All Rights Reserved. Designed by Thiago Magdalena Alvarez.</p>
